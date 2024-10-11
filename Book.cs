@@ -15,12 +15,15 @@ namespace BookRentalManagementSystem_V1
             this.title = title;
             this.author = author;
             this.rentalPrice = rentalPrice;
+            TotalBooks++;
         }
 
         public string bookid {  get; set; }
         public string title { get; set; }
         public string author { get; set; }
         public decimal rentalPrice { get; set; }
+
+        private static int TotalBooks = 0;
 
 
 
