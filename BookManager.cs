@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -50,15 +51,42 @@ namespace BookRentalManagementSystem_V1
 
             Book book = Books.Find(b => b.bookid == bid);
 
-            Console.WriteLine("Enter New Title");
-            book.title = Console.ReadLine();
-            Console.WriteLine("Enter New Author");
-            book.author = Console.ReadLine();
-            Console.WriteLine("Enter New Rental Price");
-            book.rentalPrice = Convert.ToDecimal(Console.ReadLine());
+            if (book == null)
+            {
+                Console.WriteLine("No Book ");
+            }
+            else
+            {
+                Console.WriteLine("Enter New Title");
+                book.title = Console.ReadLine();
+                Console.WriteLine("Enter New Author");
+                book.author = Console.ReadLine();
+                Console.WriteLine("Enter New Rental Price");
+                book.rentalPrice = Convert.ToDecimal(Console.ReadLine());
 
-            Console.WriteLine("Book update Su");
+                Console.WriteLine("Book update Sucessfully");
+            }
 
+           
+
+        }
+
+        public void DeleteBook()
+        {
+            Console.WriteLine("Enter Book Id For Update");
+            string bid = Console.ReadLine();
+
+            Book book = Books.Find(b => b.bookid == bid);
+
+            if (book == null)
+            {
+                Console.WriteLine("No Book ");
+            }
+            else
+            {
+               Books.Remove(book);
+                Console.WriteLine("Book Delete Sucessfully");
+            }
         }
     }
 }

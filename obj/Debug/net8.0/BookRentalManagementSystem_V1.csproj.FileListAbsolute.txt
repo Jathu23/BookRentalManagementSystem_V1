@@ -12,3 +12,4 @@ C:\Users\UT01215\Desktop\BookRentalManagementSystem_V1\obj\Debug\net8.0\refint\B
 C:\Users\UT01215\Desktop\BookRentalManagementSystem_V1\obj\Debug\net8.0\BookRentalManagementSystem_V1.pdb
 C:\Users\UT01215\Desktop\BookRentalManagementSystem_V1\obj\Debug\net8.0\BookRentalManagementSystem_V1.genruntimeconfig.cache
 C:\Users\UT01215\Desktop\BookRentalManagementSystem_V1\obj\Debug\net8.0\ref\BookRentalManagementSystem_V1.dll
+C:\Users\UT01215\Desktop\BookRentalManagementSystem_V1\obj\Debug\net8.0\BookRentalManagementSystem_V1.sourcelink.json
