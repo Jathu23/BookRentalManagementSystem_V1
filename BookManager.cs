@@ -75,7 +75,7 @@ namespace BookRentalManagementSystem_V1
 
         public void DeleteBook()
         {
-            Console.WriteLine("Enter Book Id For Update");
+            Console.WriteLine("Enter Book Id For delete");
             string bid = Console.ReadLine();
 
             Book book = Books.Find(b => b.bookid == bid);
