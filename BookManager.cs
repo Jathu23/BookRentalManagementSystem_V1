@@ -18,7 +18,9 @@ namespace BookRentalManagementSystem_V1
             Console.WriteLine("Enter Book Author");
             string author =Console.ReadLine();
             Console.WriteLine("Enter Book RentalPrice");
-            decimal rentalprice = Convert.ToDecimal(Console.ReadLine());
+            decimal price = Convert.ToDecimal(Console.ReadLine());
+
+            decimal rentalprice = ValidateBookRentalPrice(price);
 
             string bookid = Books.Count() + 1.ToString();
 
@@ -87,6 +89,18 @@ namespace BookRentalManagementSystem_V1
                Books.Remove(book);
                 Console.WriteLine("Book Delete Sucessfully");
             }
+        }
+
+        public decimal ValidateBookRentalPrice(decimal price)
+        {
+            while (price <= 0)
+            {
+                Console.WriteLine("Price must be possitive");
+                Console.WriteLine("Enter a valid price");
+
+                price = Convert.ToDecimal(Console.ReadLine());
+            }
+            return price;
         }
     }
 }
