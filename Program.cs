@@ -13,9 +13,11 @@ namespace ConsoleApp1
         {
             Book book1 = new Book("001", "PONNIYIN SELVAN", "kalki", 10);
 
-            Console.WriteLine(book1.ToString());
+            //Console.WriteLine(book1.ToString());
 
-            Startpogram();
+
+            //var book = new EBook("df","fjdhf","fh",1,23,"mp3");
+            //book.DisplayDigitalBookInfo();
         }
 
         static void Startpogram()
