@@ -29,6 +29,11 @@ namespace BookRentalManagementSystem_V1
             return $"bookId: {bookid}, title: {title}, author: {author}, rentalPrice: {rentalPrice}";
         }
 
+        public virtual string DisplayBookInfo()
+        {
+           
+            return $"bookId: {bookid}, title: {title}, author: {author}, rentalPrice: {rentalPrice}";
 
+        }
     }
 }

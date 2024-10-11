@@ -22,5 +22,10 @@ namespace BookRentalManagementSystem_V1
         {
             Console.WriteLine($"{base.ToString()} ,filesize: {filesize} ,format: {format}");
         }
+
+        public override string DisplayBookInfo()
+        {
+            return $"bookId: {bookid}, title: {title}, author: {author}, rentalPrice: {rentalPrice},filesize:{filesize},format: {format} ";
+        }
     }
 }

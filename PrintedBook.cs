@@ -24,5 +24,10 @@ namespace BookRentalManagementSystem_V1
             Console.WriteLine($"{base.ToString()} ,ISBN: {ISBN} ,NumberOfPages: {NumberOfPages}");
         }
 
+        public override string DisplayBookInfo()
+        {
+            return $"bookId: {bookid}, title: {title}, author: {author}, rentalPrice: {rentalPrice},ISBN:{ISBN},NumberOfPages: {NumberOfPages} ";
+        }
+
     }
 }
